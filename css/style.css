@@ -123,3 +123,25 @@ header .links ul li a{
     color: #757575;
     font-weight: 400;
 }
+
+/*footer*/
+footer {
+    background-color: #FFBE51;
+    padding-top: 30px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .mapa-footer iframe{
+    margin-left: 100px;
+}
+
+footer .copyright{
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0;
+    background-color:#C4C4C4;
+}
