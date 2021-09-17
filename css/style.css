@@ -44,3 +44,24 @@ header .links ul li a{
     color: #FFFFFF;
     text-decoration: none;
 }
+
+/*banner*/
+.banner {
+    background-color: white;
+}
+
+.banner .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.banner .texto-banner h1{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #757575;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
