@@ -65,3 +65,37 @@ header .links ul li a{
     letter-spacing: 1px;
     font-size: 30px;
 }
+
+/*servicos*/
+.servicos{
+    background-color: #E5E5E5;
+}
+
+.servicos .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.servicos h2{
+    padding-top: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.servicos .retangulo{
+    width: 260px;
+    height: 250px;
+    background-color: white;
+}
+
+.servicos .info {
+    margin-top: 15px;
+}
+
+.servicos .info span{
+    font-weight: 800;
+}
+.servicos .info small{
+    font-size: 15px;
+}
