@@ -68,10 +68,11 @@ header .links ul li a{
 
 /*servicos*/
 .servicos{
+    margin-top: 45px;
     background-color: #E5E5E5;
 }
 
-.servicos .container{
+.servicos .container{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -91,6 +92,7 @@ header .links ul li a{
 
 .servicos .info {
     margin-top: 15px;
+    margin-bottom: 45px;
 }
 
 .servicos .info span{
@@ -98,4 +100,26 @@ header .links ul li a{
 }
 .servicos .info small{
     font-size: 15px;
+}
+
+/*banner 2*/
+.banner-2{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.banner-2 .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-2 .texto-banner2 h3{
+    color:#757575;
+    font-weight: 700;
+}
+
+.banner-2 .texto-banner2 span{
+    color: #757575;
+    font-weight: 400;
 }
