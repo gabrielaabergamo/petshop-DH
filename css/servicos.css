@@ -49,84 +49,75 @@ header .links ul li a:hover{
     color:#f9d596;
     transition: 0.5s;
 }
-
-/*banner*/
-.banner {
-    background-color: white;
+/*serviços*/
+.servicos{
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
-
-.banner .container{
+.servicos h1{
+    text-align: center;
+    color:#FFBE51;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+.servicos .container{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 30px;
 }
-
-.banner .texto-banner h1{
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #757575;
-    letter-spacing: 1px;
-    font-size: 30px;
-}
-
-/*servicos*/
-.servicos{
-    margin-top: 45px;
-    background-color: #E5E5E5;
-}
-
-.servicos .container{ 
+.servicos .container>div{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.servicos h2{
-    padding-top: 45px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 400;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 .servicos .retangulo{
-    width: 260px;
-    height: 250px;
-    background-color: white;
+    background-color: darkgray;
+    width: 266px;
+    height: 264px;
+    margin-left: 50px;
 }
 
-.servicos .info {
-    margin-top: 15px;
-    margin-bottom: 45px;
+.servicos .info{
+    margin-left: 100px;
 }
 
-.servicos .info span{
-    font-weight: 800;
-}
-.servicos .info small{
-    font-size: 15px;
-}
-
-/*banner 2*/
-.banner-2{
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-.banner-2 .container{
+.servicos .info>div{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
-.banner-2 .texto-banner2 h3{
-    color:#757575;
-    font-weight: 700;
+.servicos .info h2{
+    text-transform: uppercase;
+    margin: 0;
 }
 
-.banner-2 .texto-banner2 span{
+.servicos .info small{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.servicos .info p{
     color: #757575;
     font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.servicos .info button{
+    background-color: #FFC107;
+    border: none;
+    width: 245px;
+    height: 32px;
+    color: white;
+}
+
+.servicos .container img{
+    margin: 70px 0;
+    width: 100%;
 }
 
 /*footer*/
