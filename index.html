@@ -5,30 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/universal.css">
+    <link rel="stylesheet" href="/componentes/header/header.css">
+    <link rel="stylesheet" href="/componentes/footer/footer.css">
+    <link rel="stylesheet" href="/componentes/card/card.css">
     <title>Petshop</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="img/Petshop DH-logo-white 1.png" alt="Logo do Petshop">
-            </div>
-
-            <div class="links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+    <header class="header"></header>
 
     <section class="banner">
-        <div class="container">
-            <div class="texto-banner">
-                <h1>
+        <div class="container banner-container">
+            <div class="banner-text">
+                <h1 class="banner-text-title">
                     Lorem ipsum dolor sit <br>
                     amet, consectetur <br>
                     adipiscing elit, sed do <br>
@@ -37,53 +26,28 @@
                 </h1>
             </div>
 
-            <div class="imagem-banner">
+            <div class="banner-image">
                 <img src="img/undraw_Dog_walking_re_l61p 1.png" alt="Pessoa passeando com cachorro">
             </div>
         </div>
     </section>
 
     <section class="servicos">
-        <h2>Serviços</h2>
-        <div class="container">
-        <div class="servico-1">
-            <div class="retangulo"></div>
-            <div class="info">
-                <span>banho completo</span> <br>
-                <small>R$40,00</small>
-            </div>
-        </div>
-
-        <div class="servico-2">
-            <div class="retangulo"></div>
-            <div class="info">
-                <span>banho e tosa</span> <br>
-                <small>R$60,00</small>
-            </div>
-        </div>
-
-        <div class="servico-3">
-            <div class="retangulo"></div>
-            <div class="info">
-                <span>consulta veterinária</span> <br>
-                <small>R$150,00</small>
-            </div>
-
-        </div>
-    </div>
+        <h2 class="servicos-title">Serviços</h2>
+        <div class="container servicos-container"></div>
     </section>
 
-    <section class="banner-2">
-        <div class="container">
-            <div class="imagem-banner2">
+    <section class="content">
+        <div class="container content-container">
+            <div class="content-image">
                 <img src="img/texto banner.png" alt="">
             </div>
 
-            <div class="texto-banner2">
-                <h3>Sed ut perspiciatis unde iste natus error sit <br>
+            <div class="content-text">
+                <h3 class="content-text-title">Sed ut perspiciatis unde iste natus error sit <br>
                     voluptatem accusantium doloremque <br>
                     laudantium, </h3>
-                <span>
+                <span class="content-text-body">
                     Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et <br>
                      quasi architecto beatae vitae dicta sunt explicabo. Nemo enim <br>
                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, <br>
@@ -94,28 +58,18 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="imagem-footer">
-                <img src="img/logo-black 1.png" alt="">
-            </div>
-            <div class="texto-footer">
-                <p>
-                    CONTATO@PETSHOP.COM.BR <br>
-                    (11) 98484-8484 (WHATSAPP) <br>
-                    <br>
-                    AVENIDA PAULISTA, 4242 <br>
-                    BAIRRO CONSOLAÇÃO <br>
-                    SÃO PAULO- SP <br>
-                </p>
-            </div>
+    <footer class="footer"></footer>
 
-            <div class="mapa-footer">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.7119190874!2d-0.3817828574308245!3d51.52873519860473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sbr!4v1631888347353!5m2!1sen!2sbr" width="466" height="257" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        <p class="copyright">PETSHOP DH -  2021</p>
-    </footer>
-
+    <script type="module">
+        import {createElement} from '/componentes/createElement.js'
+        import {createMarkupHeader} from '/componentes/header/header.js'
+        import {createMarkupCard} from '/componentes/card/card.js'
+        import {createMarkupFooter} from '/componentes/footer/footer.js'
+    
+        createElement('.header', createMarkupHeader())
+        createElement('.servicos-container', createMarkupCard())
+        createElement('.footer', createMarkupFooter())
+    </script>
 </body>
+
 </html>

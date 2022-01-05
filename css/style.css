@@ -1,61 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
-* {
-    /* elemento respeita limite de tamanho, mesmo com padding */
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    width: 1000px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-/*header*/
-header{
-    background-color: #FFBE51;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .links ul{
-    display: flex;
-    list-style: none;
-}
-
-header .links ul li{
-    margin-right: 40px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-header .links ul li a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-header .links ul li a:hover{
-    color:#f9d596;
-    transition: 0.5s;
-}
-
-/*banner*/
 .banner {
     background-color: white;
 }
 
-.banner .container{
+.banner-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +11,7 @@ header .links ul li a:hover{
     margin-bottom: 30px;
 }
 
-.banner .texto-banner h1{
+.banner-text-title{
     font-weight: 800;
     text-transform: uppercase;
     color: #757575;
@@ -77,76 +25,36 @@ header .links ul li a:hover{
     background-color: #E5E5E5;
 }
 
-.servicos .container{ 
+.servicos-container{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.servicos h2{
+.servicos-title{
     padding-top: 45px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
 }
-.servicos .retangulo{
-    width: 260px;
-    height: 250px;
-    background-color: white;
-}
 
-.servicos .info {
-    margin-top: 15px;
-    margin-bottom: 45px;
-}
-
-.servicos .info span{
-    font-weight: 800;
-}
-.servicos .info small{
-    font-size: 15px;
-}
-
-/*banner 2*/
-.banner-2{
+.content{
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
-.banner-2 .container{
+.content-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.banner-2 .texto-banner2 h3{
+.content-text-title{
     color:#757575;
     font-weight: 700;
 }
 
-.banner-2 .texto-banner2 span{
+.content-text-body{
     color: #757575;
     font-weight: 400;
-}
-
-/*footer*/
-footer {
-    background-color: #FFBE51;
-    padding-top: 30px;
-}
-footer .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .mapa-footer iframe{
-    margin-left: 100px;
-}
-
-footer .copyright{
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 0;
-    background-color:#C4C4C4;
 }

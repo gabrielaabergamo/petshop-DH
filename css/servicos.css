@@ -1,143 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 
-* {
-    /* elemento respeita limite de tamanho, mesmo com padding */
-    box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    width: 1000px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-/*header*/
-header{
-    background-color: #FFBE51;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-}
-
-header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .links ul{
-    display: flex;
-    list-style: none;
-}
-
-header .links ul li{
-    margin-right: 40px;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-header .links ul li a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-header .links ul li a:hover{
-    color:#f9d596;
-    transition: 0.5s;
-}
-/*serviços*/
 .servicos{
     margin-top: 70px;
     margin-bottom: 100px;
 }
-.servicos h1{
+.servicos-title{
     text-align: center;
     color:#FFBE51;
     text-transform: uppercase;
     margin-bottom: 70px;
 }
-.servicos .container{
+.servicos-container{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 30px;
 }
-.servicos .container>div{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.servicos .retangulo{
-    background-color: darkgray;
-    width: 266px;
-    height: 264px;
-    margin-left: 50px;
-}
 
-.servicos .info{
-    margin-left: 100px;
-}
-
-.servicos .info>div{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-
-.servicos .info h2{
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.servicos .info small{
-    font-size: 17px;
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
-.servicos .info p{
-    color: #757575;
-    font-weight: 400;
-    margin-bottom: 50px;
-}
-
-.servicos .info button{
-    background-color: #FFC107;
-    border: none;
-    width: 245px;
-    height: 32px;
-    color: white;
-}
-
-.servicos .container img{
+.servicos-img{
     margin: 70px 0;
     width: 100%;
 }
 
-/*footer*/
-footer {
-    background-color: #FFBE51;
-    padding-top: 30px;
-}
-footer .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .mapa-footer iframe{
-    margin-left: 100px;
-}
-
-footer .copyright{
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 0;
-    background-color:#C4C4C4;
+.servicos-img:last-of-type{
+    display: none;
 }
