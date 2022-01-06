@@ -19,5 +19,5 @@ export function createMarkupServicos(){
         </div>
     </div>
     <img class="servicos-img" src="img/linha.png" alt="">
-    `).join('')
+    `).join('') 
 }

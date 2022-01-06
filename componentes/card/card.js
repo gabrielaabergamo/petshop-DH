@@ -10,5 +10,5 @@ export function createMarkupCard() {
             <small class="card-preco">${servicos.preco}</small>
         </div>
     </div>
-    `).join('');
+    `).join(''); 
 }

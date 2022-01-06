@@ -22,5 +22,5 @@ export function createMarkupFooter(){
         </div>
     </div>
     <p class="footer-copyright">PETSHOP DH -  2021</p>
-    `)
+    `) 
 }
