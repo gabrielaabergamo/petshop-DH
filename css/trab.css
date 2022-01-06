@@ -1,24 +1,24 @@
 
-.trab-form-input:not([type="checkbox"]){
+.trab-form__input:not([type="checkbox"]){
     width: 100%;
     padding: 5px;
     margin:5px 0 20px;
 }
 
-.trab-form-textarea{
+.trab-form__textarea{
     width: 100%;
     padding: 5px;
     margin:5px 0 20px;
     resize: none;
 }
 
-.trab-form-select{
+.trab-form__select{
     width: 100%;
     padding: 5px;
     margin:5px 0 20px;
 }
 
-.trab-form-btn{
+.trab-form__btn{
     padding: 15px 30px;
     text-transform: uppercase;
     background-color: #ffbe51;
@@ -28,17 +28,17 @@
     transition: 0.4s;
 }
 
-.trab-form-btn:active {
+.trab-form__btn:active {
     background-color: #bd7c0c;
 }
 
-.trab-form-input:not([type="checkbox"], [type="file"]):focus-visible,
-.trab-form-textarea:focus-visible,
-.trab-form-select:focus-visible {
+.trab-form__input:not([type="checkbox"], [type="file"]):focus-visible,
+.trab-form__textarea:focus-visible,
+.trab-form__select:focus-visible {
     outline-color: #ffbe51;
 }
 
-.trab-form-btn:hover{
+.trab-form__btn:hover{
     transition: 0.5s;
     background-color: chocolate;
 }

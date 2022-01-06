@@ -1,3 +1,5 @@
+import "./header.scss"
+
 export function createMarkupHeader() {
     return (`
     <div class="container header-container">
@@ -7,10 +9,10 @@ export function createMarkupHeader() {
 
         <div class="header-nav">
             <ul class="header-list">
-                <li class="header-list-item"><a class="header-list-link" href="index.html">Home</a></li>
-                <li class="header-list-item"><a class="header-list-link" href="servicos.html">Serviços</a></li>
-                <li class="header-list-item"><a class="header-list-link" href="contato.html">Contato</a></li>
-                <li class="header-list-item"><a class="header-list-link" href="trabalhe-conosco.html">Trabalhe conosco</a></li>
+                <li class="header-list__item"><a class="header-list__link" href="index.html">Home</a></li>
+                <li class="header-list__item"><a class="header-list__link" href="servicos.html">Serviços</a></li>
+                <li class="header-list__item"><a class="header-list__link" href="contato.html">Contato</a></li>
+                <li class="header-list__item"><a class="header-list__link" href="trabalhe-conosco.html">Trabalhe conosco</a></li>
             </ul>
         </div>
     </div>

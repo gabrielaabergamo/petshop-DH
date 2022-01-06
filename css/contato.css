@@ -18,17 +18,17 @@
     font-size: 40px;
 }
 
-.contato-form-input{
+.contato-form__input{
     width: 100%;
     padding: 5px;
     margin:5px 0 20px;
 }
 
-.contato-form-input:focus-visible{
+.contato-form__input:focus-visible{
     outline-color: #ffbe51;
 }
 
-.contato-form-textarea{
+.contato-form__textarea{
     width: 100%;
     padding: 5px;
     margin:5px 0 20px;
@@ -37,11 +37,11 @@
     margin-bottom: 5px;
 }
 
-.contato-form-textarea:focus-visible{
+.contato-form__textarea:focus-visible{
     outline-color: #ffbe51;
 }
 
-.contato-form-btn{
+.contato-form__btn{
     width: 100%;
     background-color: #FFC107;
     color: white;

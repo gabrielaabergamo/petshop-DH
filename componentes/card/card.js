@@ -1,4 +1,5 @@
 import {servicos} from '../servicos-list.js'
+import "./card.scss"
 
 export function createMarkupCard() {
     return servicos.map(servicos => `

@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/trab.css">
-    <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="/componentes/header/header.css">
-    <link rel="stylesheet" href="/componentes/footerv2/footerv2.css">
     <title>Trabalhe conosco!</title>
 </head>
 <body>
@@ -17,25 +14,25 @@
         <h1>Trabalhe conosco</h1>
         <form class="trab-form" enctype="multipart/form-data">
             <label for="nome-completo">Nome Completo</label>
-            <input class="trab-form-input" type="text" name="nome" id="nome-completo" required>
+            <input class="trab-form__input" type="text" name="nome" id="nome-completo" required>
 
             <label for="email">E-mail</label>
-            <input class="trab-form-input" type="email" name="email" id="email" required>
+            <input class="trab-form__input" type="email" name="email" id="email" required>
 
             <label for="telefone">Telefone</label>
-            <input class="trab-form-input" type="tel" name="telefone" id="telefone" required>
+            <input class="trab-form__input" type="tel" name="telefone" id="telefone" required>
 
             <label for="curriculo">Currículo</label>
-            <input class="trab-form-input" type="file" name="curriculo" id="curriculo" accept="image/*, .pdf" multiple required>
+            <input class="trab-form__input" type="file" name="curriculo" id="curriculo" accept="image/*, .pdf" multiple required>
 
             <label for="descricao">Descrição</label>
-            <textarea class="trab-form-textarea" name="descricao" id="descricao" required maxlength="200"></textarea>
+            <textarea class="trab-form__textarea" name="descricao" id="descricao" required maxlength="200"></textarea>
 
             <label for="data-nascimento">Data de Nascimento</label>
-            <input class="trab-form-input" type="date" name="data-nascimento" id="data-nascimento" required>
+            <input class="trab-form__input" type="date" name="data-nascimento" id="data-nascimento" required>
 
             <label for="carga-horaria">Carga Horária</label>
-            <select class="trab-form-select" name="carga-horaria" id="carga-horaria" required>
+            <select class="trab-form__select" name="carga-horaria" id="carga-horaria" required>
                 <option selected disabled value="">Selecione uma opção</option>
                 <option value="Tempo Integral">Tempo Integral</option>
                 <option value="Meio Período">Meio Período</option>
@@ -63,20 +60,14 @@
 
             </ul>
 
-            <button class="trab-form-btn" type="submit">Enviar</button>
+            <button class="trab-form__btn" type="submit">Enviar</button>
         </form>
     </div>
 
-    <footer class="footer"></footer>
+    <footer class="footer-v2"></footer>
+    
     <script src="js/main.js"></script>
     <script src="js/validarform.js"></script>
-    <script type="module">
-        import {createElement} from '/componentes/createElement.js'
-        import {createMarkupHeader} from '/componentes/header/header.js'
-        import {createMarkupFooterv2} from '/componentes/footerv2/footerv2.js'
-    
-        createElement('.header', createMarkupHeader())
-        createElement('.footer', createMarkupFooterv2())
-    </script>
+    <script src="./dist/bundle.js"></script>
 </body>
 </html>
