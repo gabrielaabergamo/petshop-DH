@@ -7,21 +7,18 @@
         align-items: center;
         justify-content: space-between;
     }
-    &-list{
+    &-nav{
         display: flex;
-        list-style: none;
-    }
-    &-list__item{
-        margin-right: 40px;
-        text-transform: uppercase;
-        font-weight: 800;
-    }
-    &-list__link{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    &-list-link:hover{
-        color:#f9d596;
-        transition: 0.5s;        
-    } 
+        &__link{
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-right: 40px;
+            text-transform: uppercase;
+            font-weight: 800;
+            &:hover{
+                color:#f9d596;
+                transition: 0.5s;        
+            } 
+        }
+    }  
 }
