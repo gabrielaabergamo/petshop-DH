@@ -1,0 +1,44 @@
+.servicos{
+    &-body{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;  
+    }
+    &-retangulo{
+        background-color: darkgray;
+        width: 266px;
+        height: 264px;
+        margin-left: 50px; 
+    }
+    &-info{
+        margin-left: 100px;  
+        &__content{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-bottom: 40px;  
+            &-title{
+                text-transform: uppercase;
+                margin: 0;
+            }
+            &-preco{
+                font-size: 17px;
+                font-weight: 400;
+                margin-top: 5px;
+                margin-left: 10px;   
+            }
+        }
+        &__description{
+            color: #757575;
+            font-weight: 400;
+            margin-bottom: 50px;       
+        }
+        &__btn{
+            background-color: #FFC107;
+            border: none;
+            width: 245px;
+            height: 32px;
+            color: white;       
+        }
+    }
+} 

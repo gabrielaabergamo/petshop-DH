@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="/componentes/header/header.css">
-    <link rel="stylesheet" href="/componentes/footerv2/footerv2.css">
+    <link rel="stylesheet" href="css/contato.css"> 
     <title>Document</title>
 </head>
 <body>
@@ -19,11 +16,11 @@
                 <h1 class="contato-titulo">Contato</h1>
                 <form class="contato-form" enctype="multipart/form-data">
                     
-                    <input class="contato-form-input" type="text" name="nome" id="nome" placeholder="nome" required>
-                    <input class="contato-form-input" type="email" name="email" id="email" placeholder="email" required>
-                    <textarea class="contato-form-textarea" name="descricao" id="descricao" placeholder="mensagem"required maxlength="200"></textarea>
+                    <input class="contato-form__input" type="text" name="nome" id="nome" placeholder="nome" required>
+                    <input class="contato-form__input" type="email" name="email" id="email" placeholder="email" required>
+                    <textarea class="contato-form__textarea" name="descricao" id="descricao" placeholder="mensagem"required maxlength="200"></textarea>
                     
-                    <button class="contato-form-btn" type="submit">entrar</button>
+                    <button class="contato-form__btn" type="submit">entrar</button>
                 </form>
             </div>
             <div class="contato-info">
@@ -41,15 +38,8 @@
 
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer-v2"></footer>
 
-    <script type="module">
-        import {createElement} from '/componentes/createElement.js'
-        import {createMarkupHeader} from '/componentes/header/header.js'
-        import {createMarkupFooterv2} from '/componentes/footerv2/footerv2.js'
-    
-        createElement('.header', createMarkupHeader())
-        createElement('.footer', createMarkupFooterv2())
-    </script>
+    <script src="./dist/bundle.js"></script>
 </body>
 </html>

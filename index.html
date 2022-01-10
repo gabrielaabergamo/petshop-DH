@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="/componentes/header/header.css">
-    <link rel="stylesheet" href="/componentes/footer/footer.css">
-    <link rel="stylesheet" href="/componentes/card/card.css">
+    <link rel="stylesheet" href="css/style.css"> 
     <title>Petshop</title>
 </head>
 <body>
@@ -16,38 +12,31 @@
 
     <section class="banner">
         <div class="container banner-container">
-            <div class="banner-text">
-                <h1 class="banner-text-title">
+                <h1 class="banner-title">
                     Lorem ipsum dolor sit <br>
                     amet, consectetur <br>
                     adipiscing elit, sed do <br>
                     eiusmod tempor <br>
                     incididunt 
                 </h1>
-            </div>
-
-            <div class="banner-image">
                 <img src="img/undraw_Dog_walking_re_l61p 1.png" alt="Pessoa passeando com cachorro">
-            </div>
         </div>
     </section>
 
-    <section class="servicos">
-        <h2 class="servicos-title">Serviços</h2>
-        <div class="container servicos-container"></div>
+    <section class="servicos-card">
+        <h2 class="servicos-card__title">Serviços</h2>
+        <div class="container servicos-card__container"></div>
     </section>
 
     <section class="content">
         <div class="container content-container">
-            <div class="content-image">
-                <img src="img/texto banner.png" alt="">
-            </div>
+            <img src="img/texto banner.png" alt="">
 
             <div class="content-text">
-                <h3 class="content-text-title">Sed ut perspiciatis unde iste natus error sit <br>
+                <h3 class="content-text__title">Sed ut perspiciatis unde iste natus error sit <br>
                     voluptatem accusantium doloremque <br>
                     laudantium, </h3>
-                <span class="content-text-body">
+                <span class="content-text__body">
                     Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et <br>
                      quasi architecto beatae vitae dicta sunt explicabo. Nemo enim <br>
                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, <br>
@@ -60,16 +49,7 @@
 
     <footer class="footer"></footer>
 
-    <script type="module">
-        import {createElement} from '/componentes/createElement.js'
-        import {createMarkupHeader} from '/componentes/header/header.js'
-        import {createMarkupCard} from '/componentes/card/card.js'
-        import {createMarkupFooter} from '/componentes/footer/footer.js'
-    
-        createElement('.header', createMarkupHeader())
-        createElement('.servicos-container', createMarkupCard())
-        createElement('.footer', createMarkupFooter())
-    </script>
+    <script src="./dist/bundle.js"></script>
 </body>
 
 </html>

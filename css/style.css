@@ -11,7 +11,7 @@
     margin-bottom: 30px;
 }
 
-.banner-text-title{
+.banner-title{
     font-weight: 800;
     text-transform: uppercase;
     color: #757575;
@@ -20,18 +20,18 @@
 }
 
 /*servicos*/
-.servicos{
+.servicos-card{
     margin-top: 45px;
     background-color: #E5E5E5;
 }
 
-.servicos-container{ 
+.servicos-card__container{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.servicos-title{
+.servicos-card__title{
     padding-top: 45px;
     text-align: center;
     text-transform: uppercase;
@@ -49,12 +49,12 @@
     align-items: center;
 }
 
-.content-text-title{
+.content-text__title{
     color:#757575;
     font-weight: 700;
 }
 
-.content-text-body{
+.content-text__body{
     color: #757575;
     font-weight: 400;
-}
+} 

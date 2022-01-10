@@ -1,0 +1,17 @@
+.card{
+    &-retangulo{
+        width: 260px;
+        height: 250px;
+        background-color: white;
+    }
+    &-info{
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+    &-titulo{
+        font-weight: 800;
+    }
+    &-preco{
+        font-size: 15px;
+    } 
+}

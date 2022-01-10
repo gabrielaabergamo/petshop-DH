@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/servicos.css">
-    <link rel="stylesheet" href="css/universal.css">
-    <link rel="stylesheet" href="/componentes/header/header.css">
-    <link rel="stylesheet" href="/componentes/footer/footer.css">
-    <link rel="stylesheet" href="/componentes/servicos/servicos.css">
+    <link rel="stylesheet" href="css/servicos.css"> 
     <title>Serviços</title>
 </head>
 <body>
@@ -21,15 +17,6 @@
 
     <footer class="footer"></footer>
 
-    <script type="module">
-        import {createElement} from '/componentes/createElement.js'
-        import {createMarkupHeader} from '/componentes/header/header.js'
-        import {createMarkupFooter} from '/componentes/footer/footer.js'
-        import {createMarkupServicos} from '/componentes/servicos/servicos.js'
-    
-        createElement('.header', createMarkupHeader())
-        createElement('.footer', createMarkupFooter())
-        createElement('.servicos-container', createMarkupServicos())
-    </script>
+    <script src="./dist/bundle.js"></script>
 </body>
 </html>

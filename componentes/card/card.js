@@ -1,4 +1,5 @@
 import {servicos} from '../servicos-list.js'
+import "./card.scss"
 
 export function createMarkupCard() {
     return servicos.map(servicos => `
@@ -9,5 +10,5 @@ export function createMarkupCard() {
             <small class="card-preco">${servicos.preco}</small>
         </div>
     </div>
-    `).join('');
+    `).join(''); 
 }
