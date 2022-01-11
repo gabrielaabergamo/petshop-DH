@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+//pages
+@import './contato.scss';
+@import './servicos.scss';
+@import './style.scss';
+@import './trab.scss';
+
+//componentes
 @import '../componentes/card/card.scss';
 @import '../componentes/footer/footer.scss';
 @import '../componentes/footerv2/footerv2.scss';
