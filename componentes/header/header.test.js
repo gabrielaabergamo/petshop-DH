@@ -1,5 +1,5 @@
 import {createMarkupHeader} from './header'
 
-test("createMarkupHeader should render cards", () =>{
+test("createMarkupHeader should render header", () =>{
     expect(createMarkupHeader()).toMatchSnapshot()
 })

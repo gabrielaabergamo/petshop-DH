@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createMarkupHeader should render cards 1`] = `
+exports[`createMarkupHeader should render header 1`] = `
 "
     <div class=\\"container header-container\\">
         <div class=\\"header-logo\\">

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createMarkupFooterv2 should render header 1`] = `
+"
+    <p class=\\"footer-copyright\\">PETSHOP DH -  2022</p>
+    "
+`;
