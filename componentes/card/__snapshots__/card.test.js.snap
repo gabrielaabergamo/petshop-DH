@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createMarkupCard should render cards 1`] = `
+"
+    <div class=\\"card\\">
+        <div class=\\"card-retangulo\\"></div>
+        <div class=\\"card-info\\">
+            <span class=\\"card-titulo\\">banho completo</span> <br>
+            <small class=\\"card-preco\\">R$ 40,00</small>
+        </div>
+    </div>
+    
+    <div class=\\"card\\">
+        <div class=\\"card-retangulo\\"></div>
+        <div class=\\"card-info\\">
+            <span class=\\"card-titulo\\">banho e tosa</span> <br>
+            <small class=\\"card-preco\\">R$ 60,00</small>
+        </div>
+    </div>
+    
+    <div class=\\"card\\">
+        <div class=\\"card-retangulo\\"></div>
+        <div class=\\"card-info\\">
+            <span class=\\"card-titulo\\">consulta veterinária</span> <br>
+            <small class=\\"card-preco\\">R$ 150,00</small>
+        </div>
+    </div>
+    "
+`;

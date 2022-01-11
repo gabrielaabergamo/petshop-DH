@@ -1,5 +1,3 @@
-import "./footer.scss"
-
 export function createMarkupFooter(){
     let year = new Date().getFullYear()
     return(`

@@ -1,5 +1,3 @@
-import "./header.scss"
-
 export function createMarkupHeader() {
     return (`
     <div class="container header-container">

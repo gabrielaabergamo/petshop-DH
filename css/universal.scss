@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import '../componentes/card/card.scss';
+@import '../componentes/footer/footer.scss';
+@import '../componentes/footerv2/footerv2.scss';
+@import '../componentes/header/header.scss';
+@import '../componentes/servicos/servicos.scss';
 
 * {
     /* elemento respeita limite de tamanho, mesmo com padding */
