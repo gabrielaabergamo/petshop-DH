@@ -1,5 +1,6 @@
-import {servicos} from '../servicos-list.js'
+import {servicos} from '../../js/servicos-list'
 import { formatter } from '../../js/formatmoney.js'
+
 
 export const createMarkupCard = (servicesList = servicos) => {
     return servicesList.map(servico => `

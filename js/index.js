@@ -1,4 +1,4 @@
-import {createElement} from '/componentes/createElement.js'
+import {createElement} from './createElement'
 import {createMarkupHeader} from '/componentes/header/header.js'
 import {createMarkupFooter} from '/componentes/footer/footer.js'
 import {createMarkupCard} from '/componentes/card/card.js'
