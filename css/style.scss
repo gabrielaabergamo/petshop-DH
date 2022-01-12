@@ -1,16 +1,14 @@
 .banner {
-    background-color: white;
+    background-color: $background-primary-color;
     &-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox;
         margin-top: 30px;
         margin-bottom: 30px;
     }
     &-title{
         font-weight: 800;
         text-transform: uppercase;
-        color: #757575;
+        color: $text-primary-color;
         letter-spacing: 1px;
         font-size: 30px; 
     }
@@ -18,11 +16,9 @@
 .servicos{
     &-card{
         margin-top: 45px;
-        background-color: #E5E5E5;
+        background-color: $background-second-color;
         &__container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+            @include flexbox;
         }   
         &__title{
             padding-top: 45px;
@@ -37,17 +33,15 @@
     margin-top: 150px;
     margin-bottom: 150px;
     &-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;       
+        @include flexbox;      
     }
     &-text{
         &__title{
-            color:#757575;
+            color:$text-primary-color;
             font-weight: 700; 
         }
         &__body{
-            color: #757575;
+            color: $text-primary-color;
             font-weight: 400;
         }
     }

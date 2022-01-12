@@ -2,47 +2,41 @@
     &-form{
         &__input{
             &:not([type="checkbox"]){
-                width: 100%;
-                padding: 5px;
-                margin:5px 0 20px;
+               @include form-wpm;
             }
             &:not([type="checkbox"], [type="file"]){
                 &:focus-visible{
-                    outline-color: #ffbe51;
+                    outline-color: $primary-color;
                 }
             }
         }
         &__textarea{
-            width: 100%;
-            padding: 5px;
-            margin:5px 0 20px;
+            @include form-wpm;
             resize: none;
             &:focus-visible{
-                outline-color: #ffbe51;
+                outline-color: $primary-color;
             }
         }
         &__select{
-            width: 100%;
-            padding: 5px;
-            margin:5px 0 20px; 
+            @include form-wpm; 
             &:focus-visible{
-                outline-color: #ffbe51;
+                outline-color: $primary-color;
             }
         }
         &__btn{
             padding: 15px 30px;
             text-transform: uppercase;
-            background-color: #ffbe51;
+            background-color: $primary-color;
             border: 0;
-            color: white;
+            color: $background-primary-color;
             font-weight: 600;
             transition: 0.4s;
             &:active{
-                background-color: #bd7c0c;
+                background-color: $btn-color-active;
             }
             &:hover{
                 transition: 0.5s;
-                background-color: chocolate;
+                background-color: $btn-color-hover;
             }
         }
     }

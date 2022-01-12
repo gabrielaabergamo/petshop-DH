@@ -1,0 +1,24 @@
+$primary-color: #FFBE51;
+
+$btn-color: #FFC107;
+$btn-color-active: #bd7c0c;
+$btn-color-hover: chocolate;
+$btn-nav-hover: #f9d596;
+
+$background-primary-color: white;
+$background-second-color: #E5E5E5;
+$background-footer: #C4C4C4;
+
+$text-primary-color: #757575;
+
+@mixin flexbox($jc: space-between, $ai: center){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin form-wpm(){
+    width: 100%;
+    padding: 5px;
+    margin:5px 0 20px;
+}
