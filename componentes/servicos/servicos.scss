@@ -1,11 +1,9 @@
 .servicos{
     &-body{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;  
+        @include flexbox($jc: flex-start, $ai: flex-start);  
     }
     &-retangulo{
-        background-color: darkgray;
+        background-color: $text-primary-color;
         width: 266px;
         height: 264px;
         margin-left: 50px; 
@@ -13,9 +11,7 @@
     &-info{
         margin-left: 100px;  
         &__content{
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
+            @include flexbox($jc: flex-start, $ai: flex-start); 
             margin-bottom: 40px;  
             &-title{
                 text-transform: uppercase;
@@ -29,16 +25,16 @@
             }
         }
         &__description{
-            color: #757575;
+            color: $text-primary-color;
             font-weight: 400;
             margin-bottom: 50px;       
         }
         &__btn{
-            background-color: #FFC107;
+            background-color: $btn-color;
             border: none;
             width: 245px;
             height: 32px;
-            color: white;       
+            color: $background-primary-color;       
         }
     }
 } 

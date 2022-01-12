@@ -1,8 +1,6 @@
 .contato{
     &-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox;
         margin-top: 90px;
         margin-bottom: 90px;
     }
@@ -10,35 +8,31 @@
         margin-bottom: 90px;
     }
     &-titulo{
-        color: #FFBE51;
+        color: $primary-color;
         text-transform: uppercase;
         font-style: bold;
         font-size: 40px; 
     }
     &-form{
         &__input{
-            width: 100%;
-            padding: 5px;
-            margin:5px 0 20px;
+            @include form-wpm;
             &:focus-visible{
-                outline-color: #ffbe51;
+                outline-color: $primary-color;
             }
         }
         &__textarea{
-            width: 100%;
-            padding: 5px;
-            margin:5px 0 20px;
+            @include form-wpm;
             resize: none;
             height: 200px;
             margin-bottom: 5px;
             &:focus-visible{
-                outline-color: #ffbe51;
+                outline-color: $primary-color;
             }
         }
         &__btn{
             width: 100%;
-            background-color: #FFC107;
-            color: white;
+            background-color: $btn-color;
+            color: $background-primary-color;
             border: none;
             height: 30px; 
         }
