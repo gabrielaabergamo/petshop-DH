@@ -1,14 +1,14 @@
-import {servicos} from '../servicos-list.js'
-import "./servicos.scss"
+import {servicos} from '../../js/servicos-list'
+import { formatter } from '../../js/formatmoney.js'
 
-export function createMarkupServicos(){
-    return servicos.map(servicos => `
+export const createMarkupServicos = (servicesList = servicos) => {
+    return servicesList.map(servico => `
     <div class="servicos-body">
         <div class="servicos-retangulo"></div>
 
         <div class="servicos-info">
             <div class="servicos-info__content">
-                <h2 class="servicos-info__content-title">${servicos.titulo}</h2> <small class="servicos-info__content-preco">${servicos.preco}</small>
+                <h2 class="servicos-info__content-title">${servico.titulo}</h2> <small class="servicos-info__content-preco">${formatter.format(servico.preco)}</small>
             </div>
             <p class="servicos-info__description">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et <br>
                 quasi architecto beatae vitae dicta sunt explicabo. Nemo enim <br>

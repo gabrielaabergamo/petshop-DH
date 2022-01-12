@@ -1,6 +1,4 @@
-import "./header.scss"
-
-export function createMarkupHeader() {
+export const createMarkupHeader = () => {
     return (`
     <div class="container header-container">
         <div class="header-logo">
@@ -15,4 +13,4 @@ export function createMarkupHeader() {
         </nav>
     </div>
     `); 
-  }
+}

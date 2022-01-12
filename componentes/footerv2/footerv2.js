@@ -1,8 +1,6 @@
-import "./footerv2.scss"
-
-export function createMarkupFooterv2(){
-    let year = new Date().getFullYear()
+let year = new Date().getFullYear()
+export const createMarkupFooterv2 = (currentYear = year) => {
     return(`
-    <p class="footer-copyright">PETSHOP DH -  ${year}</p>
+    <p class="footer-copyright">PETSHOP DH -  ${currentYear}</p>
     `)
-} 
+}

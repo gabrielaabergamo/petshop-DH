@@ -1,13 +1,14 @@
-import {servicos} from '../servicos-list.js'
-import "./card.scss"
+import {servicos} from '../../js/servicos-list'
+import { formatter } from '../../js/formatmoney.js'
 
-export function createMarkupCard() {
-    return servicos.map(servicos => `
+
+export const createMarkupCard = (servicesList = servicos) => {
+    return servicesList.map(servico => `
     <div class="card">
         <div class="card-retangulo"></div>
         <div class="card-info">
-            <span class="card-titulo">${servicos.titulo}</span> <br>
-            <small class="card-preco">${servicos.preco}</small>
+            <span class="card-titulo">${servico.titulo}</span> <br>
+            <small class="card-preco">${formatter.format(servico.preco)}</small>
         </div>
     </div>
     `).join(''); 
