@@ -1,4 +1,5 @@
-window.addEventListener('load', () => {
+export const validateForm = () =>{
+    window.addEventListener('load', () => {
     console.log("viro fellas")
 
     let botao = document.querySelector('form button')
@@ -43,4 +44,5 @@ window.addEventListener('load', () => {
         }
     }
 
-})
+    })
+}

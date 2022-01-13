@@ -2,16 +2,16 @@
     "services": [
         {
             "id": 1,
-            "title": "banho completo",
+            "title": "banho completooo",
             "price": 40
         }, {
             "id": 2,
-            "titulo": "banho e tosa",
-            "preco": 60
+            "title": "banho e tosa",
+            "price": 60
         }, {
             "id": 3,
-            "titulo": "consulta veterinária",
-            "preco": 150 
+            "title": "consulta veterinária",
+            "price": 150 
         }
     ]
 }
