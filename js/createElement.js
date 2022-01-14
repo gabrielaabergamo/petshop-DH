@@ -1,5 +1,5 @@
-export const createElement = (selector, markup) => {
+export const createElement = async (selector, markup) => {
     const element = document.querySelector(selector);
     if (element)
-      element.innerHTML = markup; 
+      element.innerHTML = await markup; 
   };
