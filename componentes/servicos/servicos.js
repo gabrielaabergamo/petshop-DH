@@ -1,13 +1,12 @@
 import { formatter } from '../../js/formatmoney.js'
 import {getData} from '../../js/db-request.js'
 
-export const createMarkupServicos = () => {
+export const createMarkupServicos = async () => {
     const data = await getData()
 
     return data.map(servico => `
     <div class="servicos-body">
         <div class="servicos-retangulo"></div>
-
         <div class="servicos-info">
             <div class="servicos-info__content">
                 <h2 class="servicos-info__content-title">${servico.title}</h2> <small class="servicos-info__content-preco">${formatter.format(servico.price)}</small>

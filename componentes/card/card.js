@@ -3,8 +3,6 @@ import {getData} from '../../js/db-request.js'
 
 export const createMarkupCard = async () => {
     const data = await getData()
-    data.map(e => console.log(e.title))
-    console.log(data)
       
     return data.map(servico => `
     <div class="card">
