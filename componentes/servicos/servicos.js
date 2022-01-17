@@ -1,8 +1,9 @@
-import {servicos} from '../../js/servicos-list'
 import { formatter } from '../../js/formatmoney.js'
 
-export const createMarkupServicos = (servicesList = servicos) => {
-    return servicesList.map(servico => `
+export const createMarkupServicos = async () => {
+    const data = await getData()
+
+    return data.map(servico => `
     <div class="servicos-body">
         <div class="servicos-retangulo"></div>
 

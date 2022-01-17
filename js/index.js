@@ -6,9 +6,9 @@ import {createMarkupServicos} from '/componentes/servicos/servicos.js'
 import {createMarkupFooterv2} from '/componentes/footerv2/footerv2.js'
 import "../css/universal.scss" 
 
-    
-createElement('.header', createMarkupHeader())
-createElement('.footer', createMarkupFooter())
-createElement('.servicos-container', createMarkupServicos())
-createElement('.servicos-card__container', createMarkupCard())
-createElement('.footer-v2', createMarkupFooterv2())
+createElement('.header', createMarkupHeader)
+createElement('.footer', createMarkupFooter)
+createElement('.servicos-container', createMarkupServicos)
+createElement('.servicos-card__container', createMarkupCard)
+createElement('.footer-v2', createMarkupFooterv2)
+validateForm()
