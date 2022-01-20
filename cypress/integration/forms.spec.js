@@ -23,6 +23,8 @@ describe("forms", ()=>{
 
         cy.get('.check [id="cafe"]').not('[disabled]').check().should('be.checked')
         
-        
+        cy.get('.trab-form__btn').click()
+
+        cy.get('.trab-form__mensagem').should('have.text', 'form enviado!')
       })
 })

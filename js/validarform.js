@@ -31,8 +31,7 @@ function btnEventClick(botao){
                 htmlErros.innerHTML +='<li>' + mensagemErro + '</li>'
             })
         } else {
-            form.submit()
-            form.innerHTML += '<p>form</p>'
+            form.innerHTML += '<p class="trab-form__mensagem">form enviado!</p>'
         }
         }
     }
