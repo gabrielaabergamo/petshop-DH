@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createMarkupFooter should render the footer 1`] = `
+exports['createMarkupFooter should render the footer 1'] = `
 "
     <div class=\\"container footer-container\\">
         <div class=\\"footer-image\\">

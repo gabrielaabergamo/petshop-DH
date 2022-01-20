@@ -1,5 +1,4 @@
-export const createMarkupHeader = () => {
-    return (`
+export const createMarkupHeader = () => (`
     <div class="container header-container">
         <div class="header-logo">
             <img src="img/Petshop DH-logo-white 1.png" alt="Logo do Petshop">
@@ -12,5 +11,4 @@ export const createMarkupHeader = () => {
             <a class="header-nav__link" href="trabalhe-conosco.html">Trabalhe conosco</a>
         </nav>
     </div>
-    `); 
-}
+    `);

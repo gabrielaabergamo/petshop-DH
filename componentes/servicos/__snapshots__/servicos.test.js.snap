@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createMarkupServicos should render cards 1`] = `
+exports['createMarkupServicos should render cards 1'] = `
 "
     <div class=\\"servicos-body\\">
         <div class=\\"servicos-retangulo\\"></div>

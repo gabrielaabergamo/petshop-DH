@@ -1,5 +1,5 @@
-import {createMarkupServicos} from "./servicos"
+import { createMarkupServicos } from './servicos';
 
-test("createMarkupServicos should render cards", ()=>{
-    expect(createMarkupServicos()).toMatchSnapshot()
-})
+test('createMarkupServicos should render cards', () => {
+  expect(createMarkupServicos()).toMatchSnapshot();
+});
