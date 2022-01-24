@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "tests": "jest --watch",
+    "database": "json-server --watch db.json",
     "testscyp": "cypress open",
+    "serve": "webpack-dev-server --config webpack.config.js",
     "lint": "eslint 'componentes/**' --ignore-pattern __snapshots__",
     "lintfix": "eslint --fix 'componentes/**' --ignore-pattern __snapshots__"
   },
@@ -29,15 +31,13 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^27.4.7",
     "sass": "^1.46.0",
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
     "axios": "^0.24.0",

@@ -21,4 +21,15 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    // contentBase
+    static : {
+      directory : path.join(__dirname, "/")
+    },
+    port: 5050,
+    // publicPath
+    devMiddleware:{
+       publicPath: "https://localhost:5050/",
+    }
+  },
 }; 
