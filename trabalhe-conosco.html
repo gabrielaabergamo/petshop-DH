@@ -13,25 +13,25 @@
         <h1>Trabalhe conosco</h1>
         <form class="trab-form" enctype="multipart/form-data">
             <label for="nome-completo">Nome Completo</label>
-            <input class="trab-form__input" type="text" name="nome" id="nome-completo" required>
+            <input class="trab-form__input" type="text" name="nome" id="nome-completo" data-cy="inputNome" required>
 
             <label for="email">E-mail</label>
-            <input class="trab-form__input" type="email" name="email" id="email" required>
+            <input class="trab-form__input" type="email" name="email" id="email" data-cy="inputEmail" required>
 
             <label for="telefone">Telefone</label>
-            <input class="trab-form__input" type="tel" name="telefone" id="telefone" required>
+            <input class="trab-form__input" type="tel" name="telefone" id="telefone" data-cy="inputTel" required>
 
             <label for="curriculo">Currículo</label>
-            <input class="trab-form__input" type="file" name="curriculo" id="curriculo" accept="image/*, .pdf" multiple required>
+            <input class="trab-form__input" type="file" name="curriculo" id="curriculo" accept="image/*, .pdf" data-cy="inputCurriculo" multiple required>
 
             <label for="descricao">Descrição</label>
-            <textarea class="trab-form__textarea" name="descricao" id="descricao" required maxlength="200"></textarea>
+            <textarea class="trab-form__textarea" name="descricao" id="descricao" data-cy="inputDescri" required maxlength="200"></textarea>
 
             <label for="data-nascimento">Data de Nascimento</label>
-            <input class="trab-form__input" type="date" name="data-nascimento" id="data-nascimento" required>
+            <input class="trab-form__input" type="date" name="data-nascimento" id="data-nascimento" data-cy="inputNasc" required>
 
             <label for="carga-horaria">Carga Horária</label>
-            <select class="trab-form__select" name="carga-horaria" id="carga-horaria" required>
+            <select class="trab-form__select" name="carga-horaria" id="carga-horaria" data-cy="selectCarga" required>
                 <option selected disabled value="">Selecione uma opção</option>
                 <option value="Tempo Integral">Tempo Integral</option>
                 <option value="Meio Período">Meio Período</option>
@@ -41,17 +41,17 @@
             <p>Prefere café ou chá?</p>
              <!-- input:checkbox -->
              <div class="check">
-                <input type="checkbox" name="preferencia_bebida" id="cafe">
+                <input type="checkbox" name="preferencia_bebida" id="cafe" data-cy="checkCafe">
                 <label for="cafe">Café</label>
             </div>
 
             <div class="check">
-                <input type="checkbox" name="preferencia_bebida" id="cha">
+                <input type="checkbox" name="preferencia_bebida" id="cha" data-cy="checkCha">
                 <label for="cha">Chá</label>
             </div>
 
             <div class="check">
-                <input type="checkbox" name="preferencia_bebida" id="outro">
+                <input type="checkbox" name="preferencia_bebida" id="outro" data-cy="checkOutros">
                 <label for="outro">Outro</label>
             </div>
 
@@ -59,7 +59,7 @@
 
             </ul>
 
-            <button class="trab-form__btn">Enviar</button>
+            <button class="trab-form__btn" data-cy="botaoEnviarForm">Enviar</button>
         </form>
     </div>
 

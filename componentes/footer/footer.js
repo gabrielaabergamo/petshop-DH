@@ -1,4 +1,4 @@
-import { createMarkupFooterv2 } from '../footerv2/footerv2.js';
+import { createMarkupFooterv2 } from '../footerv2/footerv2';
 
 export const createMarkupFooter = () => (`
     <div class="container footer-container">
