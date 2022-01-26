@@ -1,10 +1,10 @@
-import { formatter } from '../../js/formatmoney.js'
-import {getData} from '../../js/db-request.js'
+import { formatter } from '../../js/formatmoney';
+import { getData } from '../../js/db-request';
 
 export const createMarkupServicos = async () => {
-    const data = await getData()
+  const data = await getData();
 
-    return data.map(servico => `
+  return data.map((servico) => `
     <div class="servicos-body">
         <div class="servicos-retangulo"></div>
         <div class="servicos-info">
@@ -20,5 +20,5 @@ export const createMarkupServicos = async () => {
         </div>
     </div>
     <img class="servicos-img" src="img/linha.png" alt="">
-    `).join('') 
-}
+    `).join('');
+};

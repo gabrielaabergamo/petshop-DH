@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`createMarkupCard should render cards 1`] = `
+exports['createMarkupCard should render cards 1'] = `
 "
     <div class=\\"card\\">
         <div class=\\"card-retangulo\\"></div>

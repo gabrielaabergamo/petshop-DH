@@ -28,11 +28,10 @@ function btnEventClick(botao){
 
         if(listaErros.length > 0){
             listaErros.forEach((mensagemErro) =>{
-                htmlErros.innerHTML +='<li>' + mensagemErro + '</li>'
+                htmlErros.innerHTML +='<li data-cy="mensagemErro">' + mensagemErro + '</li>'
             })
         } else {
-            form.submit()
-            form.innerHTML += '<p>form</p>'
+            form.innerHTML += '<p class="trab-form__mensagem" data-cy="mensagemFormEnviado">form enviado!</p>'
         }
         }
     }
